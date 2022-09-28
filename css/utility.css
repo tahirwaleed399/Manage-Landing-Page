@@ -1,0 +1,72 @@
+:root {
+    --BrightRed: hsl(12, 88%, 59%);
+    --DarkBlue: hsl(228, 39%, 23%);
+    --Dark-Grayish: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+    --normal: 16px;
+    --font: 'Be Vietnam', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--Very-Dark-Blue);
+}
+
+.font {
+    font-family: var(--font);
+}
+
+.containerl {
+    width: 92%;
+    max-width: 1111px;
+    margin: auto;
+}
+
+.btn-primary {
+    padding: 1.8rem 3.4rem;
+    border: none;
+    background: var(--BrightRed);
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    animation: glowing 1300ms infinite;
+}
+
+.btn-small {
+    padding: 1.1rem 2.2rem;
+    font-weight: 600;
+}
+
+.text {
+    font-size: var(--normal);
+    /* margin: 3.5rem 0; */
+    color: var(--Dark-Grayish);
+    width: 80%;
+    line-height: 1.5;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: var(--BrightRed);
+        box-shadow: 0 0 3px var(--BrightRed);
+    }
+    50% {
+        background-color: hsl(12, 90%, 72%);
+        box-shadow: 0 0 15px hsl(12, 90%, 72%);
+    }
+    100% {
+        background-color: var(--BrightRed);
+        box-shadow: 0 0 3px var(--BrightRed);
+    }
+}
